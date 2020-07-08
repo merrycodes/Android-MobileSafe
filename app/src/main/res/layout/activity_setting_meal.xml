@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/main_title_bar"/>
+    <LinearLayout
+        android:id="@+id/ll_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="月套餐总量："
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/total_flow"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="请输入总流量(单位为M)"
+            android:numeric="integer"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textColorHint="@color/gray"/>
+    </LinearLayout>
+</RelativeLayout>

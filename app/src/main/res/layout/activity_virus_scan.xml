@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/blue_color" >
+        <include layout="@layout/main_title_bar" />
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/virus_scan_icon" />
+        <TextView
+            android:id="@+id/tv_last_scan_time"
+            style="@style/textview16sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_all_scan_virus"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <ImageView
+            android:id="@+id/iv_quick_scan"
+            style="@style/wrapcontent"
+            android:src="@drawable/quick_scan_icon"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/tv_all_scan"
+            style="@style/textview16sp"
+            android:layout_toRightOf="@+id/iv_quick_scan"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="全盘扫描"/>
+        <TextView
+            style="@style/textview14sp"
+            android:layout_below="@+id/tv_all_scan"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/iv_quick_scan"
+            android:layout_marginTop="10dp"
+            android:text="全面扫描手机，杀毒更彻底"/>
+        <View
+            android:layout_width="13dp"
+            android:layout_height="20dp"
+            android:background="@drawable/right_arrow_blue"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0px"
+            android:background="@android:color/darker_gray"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

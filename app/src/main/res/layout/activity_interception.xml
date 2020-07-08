@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/main_title_bar" />
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:divider="@color/gray"
+        android:dividerHeight="1px">
+    </ListView>
+    <TextView
+        android:id="@+id/no_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无拦截信息"
+        android:layout_centerInParent="true"
+        android:textColor="@color/dark_gray"
+        android:textSize="18sp"/>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/main_title_bar" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#f0f1f5">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/blue_color"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <com.itheima.mobilesafe.home.view.ArcProgressBar
+                    android:id="@+id/pb_sd"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android_custom:textColor="#EFEFEF"
+                    android_custom:textIsDisplayable="true"
+                    android_custom:textSize="30sp" />
+
+                <com.itheima.mobilesafe.home.view.ArcProgressBar
+                    android:id="@+id/pb_rom"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="35dp"
+                    android_custom:textColor="#EFEFEF"
+                    android_custom:textIsDisplayable="true"
+                    android_custom:textSize="30sp" />
+            </LinearLayout>
+
+            <include layout="@layout/main_content" />
+
+            <include layout="@layout/main_bottom" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
